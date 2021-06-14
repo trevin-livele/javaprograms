@@ -1,0 +1,58 @@
+//creating a main method
+public static void main(string [] xyz {
+}
+
+//creating a dumb method
+
+private static void add(){
+int a=10;
+int b=20;
+
+System.out.println(a + b);
+
+//cleaver method
+private static void subtract(int z, int y){
+system.out.println(cleaver method: "+ (z + y));
+}
+
+//smart method
+private static int multiply(int a, int b){
+int multAB = a * b 
+
+
+
+//===========================================================================================================
+
+package trevo;
+
+public class TestingMethods {
+    public static void main(String []xyz){
+        //call add method
+        add();
+        //call substract
+        subtract( 30,10);
+        //call multiply
+        int x = multiply(70,20);
+        System.out.println("smart method: "+x);
+    }
+
+
+//creating a dumb method
+
+    private static void add() {
+        int a = 10;
+        int b = 20;
+
+        System.out.println(a + b);
+    }
+    //cleaver method
+    private static void subtract(int z, int y){
+        System.out.println("cleaver method: "+ (z - y));
+    }
+
+    //smart method
+    private static int multiply(int a, int b) {
+        int multAB = a * b;
+        return multAB;
+    }
+}

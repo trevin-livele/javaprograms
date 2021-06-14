@@ -1,0 +1,20 @@
+import java.until scanner:
+public class userimputmain {
+public static void main(string[] args) {
+scanner sc = new scanner(system.in);
+string firststr =sc.nextline();
+system.out.println("you entered : " + firststr);
+int a = sc.nextint();
+system.out.println("you entred : " + a);
+
+/*sample interactive imput*/
+system.out.println("hello what is your name: ");
+scanner sc = new scanner(system.in);
+string name = sc.nextline();
+system.out.println("hello " + name);
+system.out.println("how old are you?");
+int age = sc.nextint();
+system.out.println("you are " + age + "years old");
+
+}
+}
