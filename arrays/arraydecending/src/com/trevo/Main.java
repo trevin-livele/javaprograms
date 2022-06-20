@@ -1,12 +1,14 @@
 package com.trevo;
 
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class Main {
+    private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         // write your code here
-        int[] myIntegers (5);
+        int[] myIntegers = getIntegers(5);
 
         int[] sorted = sortIntegers(myIntegers);
         printArray(sorted);
@@ -17,7 +19,7 @@ public class Main {
         int[] array = new int[capacity];
         System.out.println("Enter " + capacity + " integer values:\r");
         for (int i = 0; i < array.length; i++) {
-            array[i] = Scanner.nextInt();
+            array[i] = scanner.nextInt();
         }
         return array;
     }
@@ -33,22 +35,24 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             sortedArray[i] = array[i];
         }
-    }
-
-    boolean flag = true;
-    int temp;
-    {
-    while(flag)
-        flag = false;
-        for (int i = 0; i<sortedArray.length - 1; i++) {
-            if (sortedArray[i] < sortedArray[i + 1]) {
-                temp = sortedArray[i] = sortedArray[i + 1];
-                sortedArray[i] = sortedArray[i + 1];
-                sortedArray[i + 1] = temp;
-                flag = true;
+//        int[] sortedArray = Array.copyOf(array, array.length);
+        boolean flag = true;
+        int temp;
+        {
+            while (flag) {
+                flag = false;
+                for (int i = 0; i < sortedArray.length - 1; i++) {
+                    if (sortedArray[i] < sortedArray[i + 1]) {
+                        temp = sortedArray[i] = sortedArray[i + 1];
+                        sortedArray[i] = sortedArray[i + 1];
+                        sortedArray[i + 1] = temp;
+                        flag = true;
+                    }
+                }
             }
+
+            return sortedArray;
         }
     }
-return sortedArray;
 }
-            }
+            
