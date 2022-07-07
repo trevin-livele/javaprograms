@@ -69,6 +69,14 @@ public class Main {
         String newItem = scanner.nextLine();
         groceryList.modifyGroceryItem(itemNo -1, newItem);
     }
+
+    public static void removeItem(){
+        System.out.println("Enter item number: ");
+        int itemNo = scanner.nextInt();
+        scanner.nextLine();
+        groceryList.removeGroceryItem(itemNo -2);
+    }
+
 }
 
 
