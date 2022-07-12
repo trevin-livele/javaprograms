@@ -15,7 +15,7 @@ public class Main {
 
             switch(choice){
                 case 0:
-                    printInstructions():
+                    printInstructions();
                     break;
                 case 1:
                     groceryList.printGroceryList();
